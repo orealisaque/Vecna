@@ -62,8 +62,9 @@ header ul li a:hover {
 }
 
 #btnAboutMore {
-  margin-top: 1rem;
+  margin-top: 0.80rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 #btnAboutMore:hover {
