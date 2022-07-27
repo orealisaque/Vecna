@@ -65,10 +65,11 @@ header ul li a:hover {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+  background-color: red;
 }
 
 #btnAboutMore:hover {
-  background-color: orange;
+  background-color: purple;
   transition: 700ms;
 }
 
