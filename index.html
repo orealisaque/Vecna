@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Redirecionamento</title>
-    <style>
-        body {
-            font-family: Poppins, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .loader {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Redirecionando para o WhatsApp</title>
 </head>
 <body>
-    <h1>Redirecionando para Atendente</h1>
-    <div class="loader"></div>
 
-    <script>
-        // Redirecionamento instantâneo
-        window.onload = function() {
-            window.location.replace("https://typebot.io/neobanksecurity");
-        };
-    </script>
+  <script>
+    // Mensagem pré-definida
+    const mensagem = encodeURIComponent('Oi, quero saber mais sobre os conteúdinhos');
+
+    // Números de WhatsApp
+    const numero1 = '554799291363';
+    const numero2 = '554799291363';
+
+    // Gera um número aleatório entre 0 e 1
+    const randomNumber = Math.random();
+
+    // Distribui entre os números com base no número aleatório
+    const selectedNumber = randomNumber < 0.5 ? numero1 : numero2;
+
+    // Redireciona para o WhatsApp com a mensagem pré-definida
+    window.location.href = `https://api.whatsapp.com/send?phone=${selectedNumber}&text=${mensagem}`;
+  </script>
+
 </body>
 </html>
